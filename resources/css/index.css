@@ -1,7 +1,97 @@
-header{
-  background: black;
+/* General Codes */
+
+html{
+  font-size: 18px;
 }
 
-header h3{
+body{
+  font-family: helvetica;
+}
+
+/* This is the header Styling Code */
+
+header{
+  height: 2.32rem;
+  background: black;
+  margin: 0 auto;
+}
+
+.hcontainer{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 1.5rem;
+}
+
+.logo span{
   color: white;
+  padding: 0.66rem 0rem 0.66rem 1rem;
+  font-size: 1rem;
+}
+
+/* This is the Image under header */
+
+#newarrival{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.ncontainer{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.imgtext{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background: black;
+  position: relative;
+  top: 9rem;
+}
+
+.imgtext h3{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 2rem 0 0.25rem 3rem;
+}
+
+.imgtext h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* This is The Nav Bar */
+
+#navigation{
+  background-color: firebrick;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.links{
+  padding: 0.75rem 0;
+}
+
+.nitem{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
 }
