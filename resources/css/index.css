@@ -1,4 +1,6 @@
-/* General Codes */
+/*
+  General Codes
+*/
 
 html{
   font-size: 18px;
@@ -17,10 +19,11 @@ div{
   display: block;
 }
 
-/* This is the header Styling Code */
+/*
+  This is the header Styling Code
+*/
 
 header{
-  height: 2.32rem;
   background: black;
   margin: 0 auto;
 }
@@ -40,7 +43,9 @@ header{
   font-size: 1rem;
 }
 
-/* This is the Image under header */
+/*
+  This is the Image under header
+*/
 
 #newarrival{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
@@ -74,18 +79,26 @@ header{
   padding-bottom: 2rem;
 }
 
-/* This is The Nav Bar */
+/*
+  This is The Nav Bar
+*/
 
 nav{
   background-color: firebrick;
 }
 
-nav ul{
+.browser-nav{
   padding: 0.75rem 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
+}
+
+.mobile-nav{
+  padding: 0.75rem 0px;
+  list-style: none;
+  text-align: center;
 }
 
 .nitem{
@@ -94,7 +107,9 @@ nav ul{
   font-size: 1rem;
 }
 
-/* This is the Main Content Code */
+/*
+  This is the Main Content Code
+*/
 
 .products{
     display: flex;
@@ -125,4 +140,107 @@ nav ul{
   text-align: center;
   display: block;
   padding: 0.5rem;
+}
+
+/*
+  This is the Location part of the MAIN code
+*/
+
+.location{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.litem{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.title{
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 0.4rem;
+}
+
+/*
+  This is the FOOTER content
+*/
+
+footer{
+  padding: 5rem 0;
+  text-align: left;
+  display: block;
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+}
+
+@media only screen and (min-width: 1025px){
+  .mobile-nav{
+    display: none;
+  }
+}
+
+/*
+  MEDIA QUERY FOR DEFAULT TABLET SCREEN
+*/
+
+@media only screen and (max-width: 1024px){
+  html{
+    font-size: 16px;
+  }
+  .browser-nav{
+    display: none;
+  }
+  .glasses{
+    display: none;
+  }
+  .mitem{
+    width: 47%;
+  }
+}
+
+/*
+  MEDIA QUERY FOR DEFAULT PHONE SCREEN
+*/
+
+@media only screen and (max-width: 470px){
+  #newarrival{
+    height: 17rem;
+  }
+  .imgtext{
+    top: 10rem;
+    width: 100%;
+    height: 7rem;
+  }
+  .imgtext h3{
+    font-size: 0.77rem;
+    padding-bottom: 0.75rem;
+  }
+  .imgtext h1{
+    font-size: 1rem;
+  }
+  .watch{
+    display: none;
+  }
+  .mitem{
+    width: 90%;
+  }
+  .products{
+    justify-content: center;
+  }
+  .location{
+    flex-direction: column;
+    align-items: center;
+  }
+  .litem{
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  footer{
+    text-align: center;
+  }
 }
